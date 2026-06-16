@@ -15,7 +15,6 @@ header{
     display: flex;
     align-items: center;
     padding: 13px;
-    text-justify: auto;
 }
 nav{
     display: flex;
@@ -23,12 +22,19 @@ nav{
     margin-left: auto;
     padding: 15px;
 }
-nav > p > a{
+nav > a{
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 10px;
+    display: inline-block; 
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-nav > p > a:hover{
+nav > a:hover{
     color: #B520FF;
+    text-shadow: 0 0 10px #B520FF;
+    transform: scale(1.1);
+}
+.inicio{
+    
 }
