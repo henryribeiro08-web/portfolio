@@ -48,3 +48,31 @@ span{
     padding: 0px 50px 50px 50px;
     color: gray;
 }
+.img-perfil{
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url("imagens/foto-perfil.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.perfil{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+    margin-top: 40px;
+}
+.sobre-mim > h3{
+    color: #B520FF;
+    font-size: 22px;
+    
+}
+.sobre-mim{
+    max-width: 600px;
+}
+.sobre-mim > p {
+    line-height: 1.7;
+}
