@@ -75,4 +75,26 @@ span{
 }
 .sobre-mim > p {
     line-height: 1.7;
+    color: rgb(226, 226, 226);
 }
+.habilidades > h3{
+    text-align: center;
+    color: #B520FF;
+    padding: 60px 40px 30px 40px;
+    font-size: 22px;
+}
+.skill{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.3s;
+}
+.card{
+    font-weight: bold;
+}
+.skill :hover{
+    transform: scale(1.1);
+}
+
