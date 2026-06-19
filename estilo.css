@@ -6,11 +6,13 @@
     box-sizing: border-box;
     font-family:'Poppins';
 }
+
 body{
     margin: 0;
     background-color: #13131F;
     color: white;
 }
+
 header{
     background-color: #03050B;
     color: white;
@@ -21,13 +23,16 @@ header{
     width: 100%;
     top: 0px;
     box-shadow: 0px -2px 20px #b520ff13;
+    z-index: 1000;
 }
+
 nav{
     display: flex;
     gap: 25px; 
     margin-left: auto;
     padding: 15px;
 }
+
 nav > a{
     text-decoration: none;
     color: white;
@@ -36,23 +41,28 @@ nav > a{
     display: inline-block; 
     transition: transform 0.3s ease, color 0.3s ease;
 }
+
 nav > a:hover{
     color: #B520FF;
     text-shadow: 0 0 10px #B520FF;
     transform: scale(1.1);
 }
+
 .inicio > h1{
     padding: 130px 50px 0px 50px;
     font-size: 2.5em;
 }
+
 span{
     color:#B520FF;
     font-size: 30px;
 }
+
 .inicio > p{
     padding: 0px 50px 70px 50px;
     color: gray;
 }
+
 .img-perfil{
     width: 350px;
     height: 350px;
@@ -63,6 +73,7 @@ span{
     background-position: center;
     box-shadow: 0px 0px 12px #b520ff69;
 }
+
 .perfil{
     align-items: flex-start;
     display: flex;
@@ -71,6 +82,7 @@ span{
     text-align: justify;
     margin-top: 40px;
 }
+
 .sobre-mim > h3{
     color: #B520FF;
     font-size: 22px;
@@ -82,12 +94,15 @@ span{
     color: #cbd5e1;
     max-width: 600px;
 }
+
 .habilidades > h3{
     text-align: center;
     color: #B520FF;
     padding: 60px 40px 30px 40px;
     font-size: 22px;
+    font-size: 20px;
 }
+
 .skill{
     display: flex;
     gap: 50px;
@@ -95,11 +110,88 @@ span{
     justify-content: center;
     flex-wrap: wrap;
     transition: 0.3s;
+    padding-bottom: 80px;
 }
+
 .card{
     font-weight: bold;
 }
+
 .skill :hover{
     transform: scale(1.1);
+}
+
+.t-projeto{
+    color: white;
+    background-color: #b520ff3d;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+    margin-bottom: 40px;
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.projeto{
+    width: 300px;
+    text-align: center;
+    transition: .3s;
+}
+
+.projeto:hover{
+    transform: translateY(-10px);
+}
+
+.projeto img{
+    width: 100%;
+}
+.codigo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.codigo > img {
+    width: 30px;
+    height: 30px;
+}
+
+.codigo:hover{
+    color: #B520FF;
+    text-shadow: 0 0 10px #B520FF;
+}
+
+#link{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 8px;
+}
+#proj{
+    padding-bottom: 8px;
+}
+.linguagem{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+#linguagem{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 4px;
+    box-shadow: 0px 0px 10px rgba(129, 129, 129, 0.09);
 }
 
