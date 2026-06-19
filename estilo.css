@@ -99,7 +99,6 @@ span{
     text-align: center;
     color: #B520FF;
     padding: 60px 40px 30px 40px;
-    font-size: 22px;
     font-size: 20px;
 }
 
@@ -117,7 +116,7 @@ span{
     font-weight: bold;
 }
 
-.skill :hover{
+.skill:hover{
     transform: scale(1.1);
 }
 
@@ -182,14 +181,14 @@ span{
     text-shadow: 0 0 10px #B520FF;
 }
 
-#link{
+.link{
     display: flex;
     justify-content: center;
     gap: 40px;
     align-items: center;
     margin-top: 8px;
 }
-#proj{
+.proj{
     padding-bottom: 8px;
 }
 .linguagem{
