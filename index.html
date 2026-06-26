@@ -141,7 +141,29 @@
             </div>
         </section>
 
-
+        <div class="form">
+            <h3>contato</h3>
+            <h2>Entre em contato comigo! 👇</h2>
+            
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <p>
+                    <label for="inome">Nome:</label><br>
+                    <input type="text" name="nome" id="inome" required minlength="5" maxlength="40" autocomplete="name">
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label><br>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="imsg">Mensagem:</label><br>
+                    <textarea name="msg" id="imsg" rows="5"></textarea>
+                </p>
+                <div class="botão">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
 
         <h2>Contato</h2>
     </main>
