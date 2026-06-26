@@ -251,3 +251,27 @@ span{
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(183, 0, 255, 0.4);
 }
+.rodape{
+    background-color: #03050B;
+    margin-top: 80px;
+    padding: 18px;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.zap{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.zap > h4 {
+    padding-left: 10px;
+}
+.zap:hover{
+    transform: scale(1.08);
+    
+}
