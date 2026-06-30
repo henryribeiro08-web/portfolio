@@ -7,10 +7,11 @@
     font-family:'Poppins';
 }
 
-body{
+body, html{
     margin: 0;
     background-color: #13131F;
     color: white;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -64,11 +65,11 @@ span{
 }
 
 .img-perfil{
-    width: 350px;
-    height: 350px;
+    width: 28vw;
+    height: 47vh;
     border: 1px solid #12001b8e;
     border-radius: 15px;
-    background-image: url("imagens/foto-perfil.jpeg");
+    background-image: url("imagens/Henry.jpeg");
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 12px #b520ff69;
