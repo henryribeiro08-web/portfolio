@@ -9,7 +9,10 @@
 
 body, html{
     margin: 0;
-    background-color: #13131F;
+    background: linear-gradient(  180deg,
+        #05060B 0%,
+        #11111B 45%,
+        #171328 100%) ;
     color: white;
     scroll-behavior: smooth;
 }
