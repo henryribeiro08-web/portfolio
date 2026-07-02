@@ -92,7 +92,7 @@ span{
     height: 47vh;
     border: 1px solid #12001b8e;
     border-radius: 15px;
-    background-image: url("imagens/Henry.jpeg");
+    background-image: url("../imagens/Henry.jpeg");
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 12px #b520ff69;
@@ -183,7 +183,8 @@ span{
 }
 
 .projeto{
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
     text-align: center;
     background-color: #1b1b2e38;
     border-radius: 20px;
