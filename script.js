@@ -37,7 +37,8 @@ let email = document.getElementById("iemail")
         mensagem.focus()
         return false
     }
-
-    
+    else{
+        alert("Mensagem enviada com sucesso!")
+    }
     return true
 }
