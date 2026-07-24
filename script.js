@@ -3,38 +3,46 @@ function enviar(){
 let nome = document.getElementById("inome")
 let email = document.getElementById("iemail")
 
+let nomeinvalido = document.getElementById("nomeERRO")
+nomeinvalido.innerText = ""
 
     if(nome.value.trim().length === 0){     
-        alert("Ops! O campo de Nome ficou em branco.")
-        nome.focus()
+        nomeinvalido.innerText = "Ops! O campo de Nome ficou em branco"
+        nome.classList.add("campo-invalido");
         return false
-    }else if(nome.value.trim().length < 3){
-        alert("O campo Nome precisa ter no minimo 3 caracteres")
-        nome.focus()
+    }
+    
+    else if(nome.value.trim().length < 3){
+        nomeinvalido.innerText = "O campo Nome precisa ter no minimo 3 caracteres"
+        nome.classList.add("campo-invalido");
         return false
     }
 
     const emailvalido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    let emailinvalido = document.getElementById("emailERRO")
+    emailinvalido.innerText = ""
 
     if(email.value.trim().length === 0){
-        alert("Ops! O campo de Email ficou em branco.")
-        email.focus()
+        emailinvalido.innerText = "Ops! O campo de Email ficou em branco."
+        email.classList.add("campo-invalido");
         return false
     }else if(!emailvalido.test(email.value)){
-        alert("Por favor, digite um e-mail válido (ex: seu_nome@dominio.com).");
-        email.focus()
+        emailinvalido.innerText = "Por favor, digite um e-mail válido (ex: seu_nome@dominio.com)."
+        email.classList.add("campo-invalido");
         return false
     }
     
     let mensagem = document.getElementById("imsg")
+    let msginvalida = document.getElementById("msgERRO")
+    msginvalida.innerText = ""
 
     if(mensagem.value.trim().length === 0){
-        alert("Ops! O campo de mensagem ficou em branco.")
-        mensagem.focus()
+        msginvalida.innerText = "Ops! O campo de mensagem ficou em branco."
+        mensagem.classList.add("campo-invalido");
         return false
     }else if(mensagem.value.trim().length < 10){
-        alert("O campo Mensagem precisa ter o minimo 10 caracteres")
-        mensagem.focus()
+        msginvalida.innerText = "O campo Mensagem precisa ter o minimo 10 caracteres"
+        mensagem.classList.add("campo-invalido");
         return false
     }
     else{

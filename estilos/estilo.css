@@ -273,7 +273,7 @@ span{
 .form input, .form textarea{
     width: 100%;
     padding: 2px;
-    margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 8px;
 }
 .botão{
@@ -318,4 +318,15 @@ span{
 .zap:hover{
     transform: scale(1.08);
     
+}
+
+label.msgInvalida{
+    color: #e74c3c;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+}
+.campo-invalido,
+.campo-invalido:focus {
+    border: 2px solid #e74c3c !important;
+    box-shadow: none !important; 
 }

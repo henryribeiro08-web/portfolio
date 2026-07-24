@@ -158,16 +158,19 @@
             
             <form method="get" autocomplete="on" onsubmit="return enviar()" novalidate>
                 <p>
-                    <label for="inome" class="nome-erro">Nome:</label><br>
+                    <label for="inome">Nome:</label><br>
                     <input type="text" name="nome" id="inome" autocomplete="name">
+                    <label id="nomeERRO" class="msgInvalida"></label>
                 </p>
                 <p>
                     <label for="iemail">E-mail:</label><br>
                     <input type="email" name="email" id="iemail" autocomplete="email">
+                    <label id="emailERRO" class="msgInvalida"></label>
                 </p>
                 <p>
                     <label for="imsg">Mensagem:</label><br>
                     <textarea name="msg" id="imsg" rows="5"></textarea>
+                    <label id="msgERRO" class="msgInvalida"></label>
                 </p>
                 <div class="botão">
                     <input type="submit" value="Enviar"  id="btn-enviar">
