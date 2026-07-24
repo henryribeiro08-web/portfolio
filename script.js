@@ -29,7 +29,7 @@ let email = document.getElementById("iemail")
     let mensagem = document.getElementById("imsg")
 
     if(mensagem.value.trim().length === 0){
-        alert("O campo de mensagem precisa ser preenchido para proseguir")
+        alert("Ops! O campo de mensagem ficou em branco.")
         mensagem.focus()
         return false
     }else if(mensagem.value.trim().length < 10){
