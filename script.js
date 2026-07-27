@@ -1,10 +1,9 @@
-
 function enviar(){
-let nome = document.getElementById("inome")
-let email = document.getElementById("iemail")
+    let nome = document.getElementById("inome")
+    let email = document.getElementById("iemail")
 
-let nomeinvalido = document.getElementById("nomeERRO")
-nomeinvalido.innerText = ""
+    let nomeinvalido = document.getElementById("nomeERRO")
+    nomeinvalido.innerText = ""
 
     if(nome.value.trim().length === 0){     
         nomeinvalido.innerText = "Ops! O campo de Nome ficou em branco"
@@ -46,7 +45,11 @@ nomeinvalido.innerText = ""
         return false
     }
     else{
-        alert("Mensagem enviada com sucesso!")
+       document.getElementById("popup").style.display = "block"
     }
+    event.preventDefault();
     return true
+}
+function fecharPopup(){
+    document.getElementById("popup").style.display = "none"
 }
